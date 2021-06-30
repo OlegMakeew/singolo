@@ -1,0 +1,25 @@
+.about-us__cards
+    +grid(repeat(1, 1fr), $gap: rem(20px), $rows: 1fr)
+
+    +phone
+        +grid(repeat(2, 1fr), $gap: rem(20px), $rows: 1fr)
+
+    +laptop
+        +grid(repeat(3, 1fr), $gap: rem(20px), $rows: 1fr)
+
+.card   
+    +phone
+        margin-right: rem(20px)
+
+.card__image
+    width: 100%
+
+.card-list
+    padding: 0
+    display: flex
+    list-style: none
+
+.list-icon
+    margin-right: rem(15px)
+    font-size: rem(30px)
+    color: $textColor

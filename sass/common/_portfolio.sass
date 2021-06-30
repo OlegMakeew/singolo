@@ -1,0 +1,45 @@
+ .portfolio
+    background-color: #303441
+
+.portfolio-title
+    padding-top: rem(35px)
+
+.portfolio-buttons
+    +flex($wrap: wrap)
+    list-style: none
+    padding: 0
+
+.portfolio-button
+    border-radius: rem(5px)
+
+.portfolio__header-items
+    margin-right: rem(10px)
+
+.portfolio-button
+    background-color: #303441
+
+.grid
+    padding-bottom: rem(40px)
+
+
+.portfolio__images
+    list-style: none
+    padding: 0
+    +grid(repeat(1, 1fr), $gap: rem(20px), $rows: 1fr)
+
+    +phone
+        +grid(repeat(2, 1fr), $gap: rem(20px), $rows: 1fr)
+
+    +tablet
+        +grid(repeat(3, 1fr), $gap: rem(20px), $rows: 1fr)
+
+    +laptop
+        +grid(repeat(4, 1fr), $gap: rem(20px), $rows: 1fr)
+
+.portfolio__image
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+
+
